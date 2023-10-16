@@ -2,7 +2,7 @@
 
 :root {
     --font-family: 'Tilt Neon', sans-serif;
-    --bg-color: #8EACCD;
+    --bg-color: #537188;
     --primary-color: #E3F4F4;
 }
 
@@ -26,4 +26,17 @@ h1 {
 h3 {
     font-size: 2em;
     margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
 }
