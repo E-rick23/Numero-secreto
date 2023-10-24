@@ -7,10 +7,14 @@ recognition.start();
 recognition.addEventListener('result', onSpeak)
 
 const numeroDitto = document.getElementById('said');
+var chute;
 
 function onSpeak(e) {
-    numeroDitto.innerHTML = e.results[0][0].transcript;
-    console.log(e.results[0][0].transcript);
+    chute = e.results[0][0].transcript;
+    chute = removerponto(chute);
+    console.log(chute);
+    numeroDitto.innerHTML = chute;
+    verificaSeChuteEValido(chute);
 }
 
 
