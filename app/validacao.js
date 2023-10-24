@@ -8,11 +8,11 @@ function verificaSeChuteEValido(chute) {
     const numero = +chute
 
     if (naoENumero(numero)) {
-        console.log("Valor inválido")
+        elementoChute.innerHTML += '<div>Valor inválido</div>'
     }
 
     if (numeroForaDaRange(numero)) {
-        console.log(`valor invalido: o numero secreto precisa estar entre ${menor} e ${maior}`)
+        elementoChute.innerHTML += `<div>Valor inválido: Diga um número entre ${menor} e ${maior}</div>`
     }
 }
 
