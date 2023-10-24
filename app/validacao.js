@@ -7,6 +7,16 @@ function removerponto(chute) {
 function verificaSeChuteEValido(chute) {
     const numero = +chute
 
+    if (chute.toUpperCase() === "GAME OVER") {
+
+        document.body.innerHTML =
+            `
+            <h2>Fim de jogo!</h2>
+            <h3>Pressione o botão para jogar novamente</h3>
+            <button id="jogar-novamente" class="btn-jogar" >Jogar novamente</button>
+            `
+            document.body.style.backgroundColor = "#303030";
+    }
     if (naoENumero(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>'
         return
